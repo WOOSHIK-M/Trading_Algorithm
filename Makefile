@@ -17,10 +17,10 @@ format:
 	isort .
 
 lint:
-	PYTHONPATH=src pytest . --pylint --flake8 --mypy
+	PYTHONPATH=src pytest src --pylint --flake8 --mypy
 
 lint-all:
-	PYTHONPATH=src pytest . --pylint --flake8 --mypy --cache-clear
+	PYTHONPATH=src pytest src --pylint --flake8 --mypy --cache-clear
 
 lint-staged:
 ifdef STAGED
