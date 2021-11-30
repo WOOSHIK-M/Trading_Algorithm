@@ -1,12 +1,6 @@
 repos:
 -   repo: local
     hooks:
-    - id: license-checker
-      name: Check if license clauses are included in the source code
-      entry: hooks/license-checker.py
-      language: script
-      pass_filenames: false
-      args: [--license-file-path=./hooks/license.txt]
     - id: format
       name: format
       language: system
