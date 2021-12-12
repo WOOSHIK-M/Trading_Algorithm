@@ -37,6 +37,10 @@ utest:
 	PYTHONPATH=src pytest test/unittest/$(target) -vv --cov=src --cov-config=.coveragerc --cov-report=html --cov-report=term-missing --cov-fail-under=100
 	coverage-badge -fo coverage.svg
 
+setup:
+	pip install -r "requirements.txt"
+	pre-commit install
+
 setup-dev:
 	pip install -r "requirements-dev.txt"
 	pre-commit install
