@@ -22,6 +22,8 @@ class BithumbAPI:
         * pybithumb.get_orderbook("BTC"): Dict[str, Any]
         * pybithumb.get_current_price("ALL"): Dict[str, Dict[str, float]]
         * pybithumb.get_ohlcv("BTC")
+
+        + we also can consider python CCXT.
     """
 
     tickers = pybithumb.get_tickers()
